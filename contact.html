@@ -4,73 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="website icon" type="png" href="images/logo_B (1).png">
     <title>Contact</title>
+    <style>
+        @media (min-width: 1024px) {
+            body {
+                background: linear-gradient(to top, #2d2d2d, #4a4a4a);
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="w-full min-h-screen relative bg-white overflow-hidden">
-        <div class="w-full h-full absolute bg-gradient-to-tr from-white to-[#bdae74] transition-all duration-500"></div>
+    <div data-layer="Landing Page" class="w-full min-h-screen relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 overflow-x-hidden">
+        <div data-layer="Background Gradient" class="w-full h-full absolute bg-gradient-to-tr from-gray-900 to-gray-800 opacity-60 transition-all duration-500"></div>
         
         <!-- Form Section -->
         <div class="px-4 md:px-8 lg:px-32 pt-16 relative">
-            <div class="text-black text-2xl font-bold font-['Poppins'] mb-8 hover:text-[#beaf75] transition-colors duration-300 cursor-pointer">Braxie</div>
+            <h1 class="text-gray-300 text-2xl md:text-3xl font-bold font-['Montserrat'] hover:text-[#beaf75] transform hover:scale-105 transition-all duration-300">
+                <i class="fas fa-crown text-[#beaf75] mr-2"></i>Braxie
+            </h1>
             
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-8 mt-16">
                 <!-- Left Column - Form -->
                 <div>
-                    <h2 class="text-black text-3xl md:text-4xl font-normal font-['Bree Serif'] mb-8 hover:text-[#beaf75] transition-colors duration-300">Kirimkan kami pertanyaan</h2>
+                    <h2 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat'] mb-8 transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Kirimkan kami pertanyaan
+                    </h2>
                     
                     <form class="space-y-6">
                         <div class="relative transform hover:scale-105 transition-all duration-300">
-                            <input type="text" placeholder="Name" class="w-full h-[68px] px-6 text-xl border border-[#545454] bg-transparent hover:border-[#beaf75] focus:border-[#beaf75] focus:outline-none transition-all duration-300"/>
+                            <input type="text" placeholder="Name" class="w-full h-[68px] px-6 text-xl border border-[#beaf75]/30 bg-gray-900/40 backdrop-blur-sm rounded-xl hover:border-[#beaf75] focus:border-[#beaf75] focus:outline-none transition-all duration-300 text-gray-300"/>
+                            <i class="fas fa-user absolute right-4 top-1/2 -translate-y-1/2 text-[#beaf75]"></i>
                         </div>
                         
                         <div class="relative transform hover:scale-105 transition-all duration-300">
-                            <input type="email" placeholder="Email" class="w-full h-[68px] px-6 text-xl border border-[#545454] bg-transparent hover:border-[#beaf75] focus:border-[#beaf75] focus:outline-none transition-all duration-300"/>
+                            <input type="email" placeholder="Email" class="w-full h-[68px] px-6 text-xl border border-[#beaf75]/30 bg-gray-900/40 backdrop-blur-sm rounded-xl hover:border-[#beaf75] focus:border-[#beaf75] focus:outline-none transition-all duration-300 text-gray-300"/>
+                            <i class="fas fa-envelope absolute right-4 top-1/2 -translate-y-1/2 text-[#beaf75]"></i>
                         </div>
                         
                         <div class="relative transform hover:scale-105 transition-all duration-300">
-                            <input type="text" placeholder="Organisasi" class="w-full h-[68px] px-6 text-xl border border-[#545454] bg-transparent hover:border-[#beaf75] focus:border-[#beaf75] focus:outline-none transition-all duration-300"/>
+                            <input type="text" placeholder="Organisasi" class="w-full h-[68px] px-6 text-xl border border-[#beaf75]/30 bg-gray-900/40 backdrop-blur-sm rounded-xl hover:border-[#beaf75] focus:border-[#beaf75] focus:outline-none transition-all duration-300 text-gray-300"/>
+                            <i class="fas fa-building absolute right-4 top-1/2 -translate-y-1/2 text-[#beaf75]"></i>
                         </div>
                         
                         <div class="relative transform hover:scale-105 transition-all duration-300">
-                            <textarea placeholder="Pesan" class="w-full h-[250px] p-6 text-xl border border-[#545454] bg-transparent hover:border-[#beaf75] focus:border-[#beaf75] focus:outline-none transition-all duration-300"></textarea>
+                            <textarea placeholder="Pesan" class="w-full h-[250px] p-6 text-xl border border-[#beaf75]/30 bg-gray-900/40 backdrop-blur-sm rounded-xl hover:border-[#beaf75] focus:border-[#beaf75] focus:outline-none transition-all duration-300 text-gray-300"></textarea>
+                            <i class="fas fa-comment absolute right-4 top-8 text-[#beaf75]"></i>
                         </div>
                         
-                        <button class="w-full h-[68px] bg-white rounded-full border border-black text-[#bfbfbf] text-2xl font-bold font-['Poppins'] hover:bg-[#beaf75] hover:text-white hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300">
-                            Kirim
+                        <button class="w-full h-[68px] bg-[#beaf75] text-gray-900 rounded-xl text-xl font-bold font-['Montserrat'] hover:bg-[#a39666] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-paper-plane mr-2"></i>Kirim
                         </button>
                     </form>
                 </div>
                 
                 <!-- Right Column - Contact Info -->
-                <div class="mt-8 md:mt-0">
-                    <h2 class="text-black text-3xl md:text-4xl font-normal font-['Bree Serif'] mb-8 hover:text-[#beaf75] transition-colors duration-300">Lebih baik lagi, mari kita bertemu langsung!</h2>
+                <div class="mt-8 md:mt-0 space-y-8 bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300">
+                    <h2 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat'] mb-8">
+                        <i class="fas fa-handshake mr-2"></i>Lebih baik lagi, mari kita bertemu langsung!
+                    </h2>
                     
-                    <p class="text-[#686868] text-xl md:text-2xl font-light font-['Poppins'] mb-8 hover:text-[#beaf75] transition-colors duration-300">
-                        Kami percaya bahwa membangun hubungan adalah fondasi dari semua kemitraan yang sukses, jadi mari kita bertemu untuk mendiskusikan bagaimana kami dapat mendukung kebutuhan Anda.
+                    <p class="text-gray-400 text-xl font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-all duration-300">
+                        <i class="fas fa-quote-left text-[#beaf75] mr-2"></i>Kami percaya bahwa membangun hubungan adalah fondasi dari semua kemitraan yang sukses, jadi mari kita bertemu untuk mendiskusikan bagaimana kami dapat mendukung kebutuhan Anda.
                     </p>
                     
-                    <button class="w-[340px] h-[68px] bg-[#a5a5a5] rounded-full text-white text-xl md:text-2xl font-bold font-['Poppins'] mb-8 hover:bg-[#beaf75] transform hover:scale-105 transition-all duration-300">
-                        WhatsApp kami
+                    <button class="w-[340px] h-[68px] bg-[#beaf75] text-gray-900 rounded-xl text-xl font-bold font-['Montserrat'] hover:bg-[#a39666] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp kami
                     </button>
                     
                     <div class="space-y-6">
-                        <h3 class="text-black text-2xl md:text-[32px] font-semibold font-['Poppins'] hover:text-[#beaf75] transition-colors duration-300">Braxie</h3>
-                        <p class="text-[#9f9f9f] text-xl md:text-[25px] font-medium font-['Poppins'] hover:text-[#beaf75] transition-colors duration-300">
-                            Deli Serdang, Sumatera Utara, Indonesia
+                        <h3 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat']">
+                            <i class="fas fa-building mr-2"></i>Braxie
+                        </h3>
+                        <p class="text-gray-400 text-xl font-normal font-['Open Sans'] hover:text-[#beaf75] transition-all duration-300">
+                            <i class="fas fa-map-marker-alt text-[#beaf75] mr-2"></i>Deli Serdang, Sumatera Utara, Indonesia
                         </p>
-                        <div class="text-[#6d6d6d] text-xl md:text-[25px] font-medium font-['Poppins'] hover:text-[#beaf75] transition-colors duration-300">
-                            Braxie@gmail.com<br/>081212345566
+                        <div class="text-gray-400 text-xl font-normal font-['Open Sans'] hover:text-[#beaf75] transition-all duration-300">
+                            <i class="fas fa-envelope text-[#beaf75] mr-2"></i>Braxie@gmail.com<br/>
+                            <i class="fas fa-phone text-[#beaf75] mr-2"></i>081212345566
                         </div>
                         
-                        <h3 class="text-black text-2xl md:text-[32px] font-semibold font-['Poppins'] hover:text-[#beaf75] transition-colors duration-300">Jam Buka</h3>
-                        <p class="text-[#6d6d6d] text-xl md:text-[25px] font-medium font-['Poppins'] hover:text-[#beaf75] transition-colors duration-300">
-                            Hari ini 09.00 - 17.00
+                        <h3 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat']">
+                            <i class="fas fa-clock mr-2"></i>Jam Buka
+                        </h3>
+                        <p class="text-gray-400 text-xl font-normal font-['Open Sans'] hover:text-[#beaf75] transition-all duration-300">
+                            <i class="fas fa-calendar-alt text-[#beaf75] mr-2"></i>Hari ini 09.00 - 17.00
                         </p>
                         
-                        <a href="index.html" class="inline-block w-[210px] h-[68px] bg-white hover:bg-[#beaf75] hover:text-white text-[#beaf75] border border-[#beaf75] rounded-full text-xl font-bold font-['Poppins'] text-center leading-[68px] transform hover:scale-105 transition-all duration-300">
-                            Home
+                        <a href="index.html" class="inline-block w-[210px] h-[68px] bg-[#beaf75] text-gray-900 rounded-xl text-xl font-bold font-['Montserrat'] text-center leading-[68px] hover:bg-[#a39666] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-home mr-2"></i>Home
                         </a>
                     </div>
                 </div>
@@ -78,42 +102,48 @@
             <br>
             <br>
         <!-- Footer -->
-        <footer class="bg-[#beaf75] text-white py-16 transition-colors duration-300">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <footer class="bg-gradient-to-b from-gray-900 to-black text-gray-400 py-16 rounded-3xl shadow-xl">
+            <div class="container mx-auto px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                     <!-- Kolom 1 - About -->
-                    <div class="hover:transform hover:scale-105 transition-all duration-300">
-                        <h3 class="text-xl font-bold mb-4 hover:text-gray-200 transition-colors duration-300">Tentang Kami</h3>
-                        <p class="text-sm hover:text-gray-200 transition-colors duration-300">Braxie adalah agensi digital kreatif yang fokus pada pengembangan solusi digital inovatif untuk membantu bisnis Anda berkembang.</p>
+                    <div class="transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-6 font-['Montserrat'] hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="fas fa-info-circle mr-2"></i>Tentang Kami
+                        </h3>
+                        <p class="text-base font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">Braxie adalah agensi digital kreatif yang fokus pada pengembangan solusi digital inovatif untuk membantu bisnis Anda berkembang.</p>
                     </div>
                     <!-- Kolom 4 - Social Media -->
                     <div class="md:col-start-4">
-                        <h3 class="text-xl font-bold mb-4 hover:text-gray-200 transition-colors duration-300">Follow Us</h3>
-                        <ul class="space-y-2">
+                        <h3 class="text-xl font-bold mb-6 font-['Montserrat'] hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="fas fa-share-alt mr-2"></i>Follow Us
+                        </h3>
+                        <ul class="space-y-4 font-['Open Sans']">
                             <li>
-                                <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" class="w-5 h-5 hover:opacity-80 transition-opacity duration-300">
-                                    Facebook
+                                <a href="#" class="flex items-center gap-3 group">
+                                    <i class="fab fa-facebook text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                    <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Facebook</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" class="w-5 h-5 hover:opacity-80 transition-opacity duration-300">
-                                    Twitter
+                                <a href="#" class="flex items-center gap-3 group">
+                                    <i class="fab fa-twitter text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                    <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Twitter</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="w-5 h-5 hover:opacity-80 transition-opacity duration-300">
-                                    Instagram
+                                <a href="#" class="flex items-center gap-3 group">
+                                    <i class="fab fa-instagram text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                    <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Instagram</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
         
-                <div class="border-t border-white mt-8 pt-8 text-center">
-                    <p class="hover:text-gray-200 transition-colors duration-300">&copy; 2025 Braxie. Hak Cipta Dilindungi.</p>
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                    <p class="font-['Open Sans'] hover:text-[#beaf75] transition-colors duration-300">
+                        <i class="far fa-copyright mr-2"></i>2025 Braxie. Hak Cipta Dilindungi.
+                    </p>
                 </div>
             </div>
         </footer>
