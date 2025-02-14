@@ -5,142 +5,314 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="website icon" type="png" href="images/logo_B (1).png">
-    <title>Creatve Digital Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Creative Digital Agency</title>
+    <style>
+        @media (min-width: 1024px) {
+            body {
+                background: linear-gradient(to top, #2d2d2d, #4a4a4a);
+            }
+        }
+    </style>
 </head>
 <body>
-    <div data-layer="Landing Page" class="w-full min-h-screen relative bg-white overflow-x-hidden">
-        <div data-layer="Rectangle 3" class="w-full h-full absolute bg-gradient-to-tr from-white to-[#bdae74]"></div>
+    <div data-layer="Landing Page" class="w-full min-h-screen relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 overflow-x-hidden">
+        <div data-layer="Background Gradient" class="w-full h-full absolute bg-gradient-to-tr from-gray-900 to-gray-800 opacity-60 transition-all duration-500"></div>
         
         <!-- Hero Section -->
         <div class="w-full relative px-4 py-8 md:px-8 lg:px-16">
-            <nav class="flex justify-between items-center mb-16">
-                <h1 class="text-black text-xl md:text-2xl font-bold font-['Poppins'] hover:text-[#beaf75] transition-colors duration-300">Braxie</h1>
+            <nav class="flex justify-between items-center mb-16 backdrop-blur-sm bg-gray-900/30 p-4 rounded-2xl">
+                <h1 class="text-gray-300 text-2xl md:text-3xl font-bold font-['Montserrat'] hover:text-[#beaf75] transform hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-crown text-[#beaf75] mr-2"></i>Braxie
+                </h1>
                 <div class="hidden md:flex gap-8">
-                    <a href="#" class="text-black hover:text-[#beaf75] text-lg font-semibold font-['Poppins'] transition-colors duration-300">Home</a>
-                    <a href="about.html" class="text-black hover:text-[#beaf75] text-lg font-semibold font-['Poppins'] transition-colors duration-300">About</a>
-                    <a href="project.html" class="text-black hover:text-[#beaf75] text-lg font-semibold font-['Poppins'] transition-colors duration-300">Project</a>
-                    <a href="contact.html" class="text-black hover:text-[#beaf75] text-lg font-semibold font-['Poppins'] transition-colors duration-300">Contact</a>
+                    <a href="#" class="text-gray-300 hover:text-[#beaf75] text-lg font-medium font-['Montserrat'] transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#beaf75] after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">
+                        <i class="fas fa-home mr-1"></i>Home
+                    </a>
+                    <a href="about.html" class="text-gray-300 hover:text-[#beaf75] text-lg font-medium font-['Montserrat'] transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#beaf75] after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">
+                        <i class="fas fa-info-circle mr-1"></i>About
+                    </a>
+                    <a href="project.html" class="text-gray-300 hover:text-[#beaf75] text-lg font-medium font-['Montserrat'] transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#beaf75] after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">
+                        <i class="fas fa-project-diagram mr-1"></i>Project
+                    </a>
+                    <a href="contact.html" class="text-gray-300 hover:text-[#beaf75] text-lg font-medium font-['Montserrat'] transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#beaf75] after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">
+                        <i class="fas fa-envelope mr-1"></i>Contact
+                    </a>
                 </div>
             </nav>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 mt-[-2rem]">
-                <div>
-                    <h2 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Poppins'] mb-4 hover:text-[#a39666] transition-colors duration-300">Pilihan Terbaik</h2>
-                    <h1 class="text-black text-3xl md:text-4xl font-bold font-['Poppins'] mb-6 hover:text-[#333] transition-colors duration-300">CREATIVE DIGITAL AGENCY</h1>
-                    <p class="text-black text-xl font-medium font-['Poppins'] mb-8 hover:text-[#444] transition-colors duration-300">
-                        Wujudkan ide bisnis anda bersama kami,<br/>
-                        lebih profesional dan lebih bermakna untuk<br/>
-                        tujuan yang terbaik.
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+                <div class="space-y-6">
+                    <h2 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat'] transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-star mr-2"></i>Solusi Digital Terbaik
+                    </h2>
+                    <h1 class="text-gray-300 text-4xl md:text-5xl font-bold font-['Montserrat'] leading-tight transform hover:scale-105 transition-all duration-300">CREATIVE DIGITAL AGENCY</h1>
+                    <p class="text-gray-400 text-xl font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-all duration-300">
+                        <i class="fas fa-check-circle text-[#beaf75] mr-2"></i>Transformasi digital untuk bisnis Anda<br/>
+                        <i class="fas fa-check-circle text-[#beaf75] mr-2"></i>Solusi kreatif dan inovatif<br/>
+                        <i class="fas fa-check-circle text-[#beaf75] mr-2"></i>Strategi digital yang terukur
                     </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#testimonials" class="px-8 py-4 bg-[#beaf75] hover:bg-white hover:text-[#beaf75] hover:border hover:border-[#beaf75] text-white rounded-full text-xl font-bold font-['Poppins'] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">Review</a>
-                        <a href="about.html" class="px-8 py-4 bg-white hover:bg-[#beaf75] hover:text-white text-[#beaf75] border border-[#beaf75] rounded-full text-xl font-bold font-['Poppins'] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">About Us</a>
+                    <div class="flex flex-wrap gap-6">
+                        <a href="#testimonials" class="px-8 py-4 bg-[#beaf75] hover:bg-[#a39666] text-gray-900 rounded-full text-xl font-bold font-['Montserrat'] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-comments mr-2"></i>Review
+                        </a>
+                        <a href="about.html" class="px-8 py-4 bg-gray-900 hover:bg-gray-800 text-[#beaf75] border-2 border-[#beaf75] rounded-full text-xl font-bold font-['Montserrat'] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-users mr-2"></i>About Us
+                        </a>
                     </div>
                 </div>
-                <div>
-                    <img src="images/Foto1.png" alt="Team" class="w-full h-auto"/>
+                <div class="transform hover:scale-105 transition-all duration-500">
+                    <img src="images/Foto1.png" alt="Team" class="w-full h-auto rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300"/>
                 </div>
             </div>
+
+            <!-- Value Proposition Section -->
+            <div class="mb-24">
+                <h2 class="text-center text-[#beaf75] text-3xl font-bold font-['Montserrat'] mb-12">
+                    <i class="fas fa-gem mr-2"></i>Mengapa Memilih Kami?
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-gray-900/80 backdrop-blur-sm rounded-xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-brain text-4xl text-[#beaf75] mb-4"></i>
+                        <h3 class="text-xl font-bold mb-4 text-[#beaf75]">Expertise</h3>
+                        <p class="text-gray-400">Tim profesional kami memiliki pengalaman luas dalam industri digital dengan portofolio yang terbukti.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">SEO</span>
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">UI/UX</span>
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">Development</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-900/80 backdrop-blur-sm rounded-xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-lightbulb text-4xl text-[#beaf75] mb-4"></i>
+                        <h3 class="text-xl font-bold mb-4 text-[#beaf75]">Inovasi</h3>
+                        <p class="text-gray-400">Selalu menghadirkan solusi kreatif dan teknologi terkini untuk memaksimalkan potensi bisnis Anda.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">AI</span>
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">Blockchain</span>
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">IoT</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-900/80 backdrop-blur-sm rounded-xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-chart-line text-4xl text-[#beaf75] mb-4"></i>
+                        <h3 class="text-xl font-bold mb-4 text-[#beaf75]">Hasil Terukur</h3>
+                        <p class="text-gray-400">Fokus pada ROI dan pertumbuhan bisnis yang berkelanjutan dengan metrik yang jelas.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">Analytics</span>
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">ROI</span>
+                            <span class="px-2 py-1 bg-[#beaf75]/10 text-[#beaf75] rounded-full text-sm">Growth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Testimonials Section -->
             <div id="testimonials" class="w-full mb-24">
-                <h2 class="text-center text-black text-2xl md:text-3xl lg:text-4xl font-bold font-['Poppins'] mb-12 hover:text-[#beaf75] transition-colors duration-300">What Our Clients Say About Us</h2>
+                <h2 class="text-center text-gray-300 text-3xl md:text-4xl lg:text-5xl font-bold font-['Montserrat'] mb-16 hover:text-[#beaf75] transform hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-quote-left mr-2"></i>Testimoni Klien Kami
+                </h2>
                 
                 <!-- Testimonials Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Card 1 -->
-                    <div class="w-full aspect-square p-6 bg-white rounded-3xl border border-[#767676] hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <div class="w-full p-6 bg-gray-900/80 backdrop-blur-sm rounded-3xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="flex items-center gap-4 mb-6">
-                            <img src="images/pengguna.png" alt="User" class="w-[60px] h-[60px] rounded-full"/>
-                            <span class="text-[#767676] text-xl font-normal font-['Poppins']">Pengguna 1</span>
+                            <img src="images/pengguna.png" alt="User" class="w-16 h-16 rounded-full border-2 border-[#beaf75]"/>
+                            <div>
+                                <span class="text-gray-300 text-xl font-semibold font-['Montserrat']">Sarah Johnson</span>
+                                <p class="text-[#beaf75] text-sm">
+                                    <i class="fas fa-building mr-1"></i>CEO, Tech Startup
+                                </p>
+                                <div class="flex text-[#beaf75] mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-[#767676] text-base font-normal font-['Poppins'] line-clamp-6">Braxie benar-benar memahami visi kami. Mereka tidak hanya menghadirkan desain yang menarik tetapi juga strategi digital yang efektif. Kolaborasi yang luar biasa!</p>
+                        <p class="text-gray-400 text-lg font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="fas fa-quote-left text-[#beaf75] mr-2 opacity-50"></i>
+                            Braxie telah membantu startup kami meningkatkan engagement pelanggan sebesar 200% dalam 3 bulan. Tim mereka luar biasa profesional dan kreatif!
+                            <i class="fas fa-quote-right text-[#beaf75] ml-2 opacity-50"></i>
+                        </p>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="w-full aspect-square p-6 bg-white rounded-3xl border border-[#767676] hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <div class="w-full p-6 bg-gray-900/80 backdrop-blur-sm rounded-3xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="flex items-center gap-4 mb-6">
-                            <img src="images/pengguna.png" alt="User" class="w-[60px] h-[60px] rounded-full"/>
-                            <span class="text-[#767676] text-xl font-normal font-['Poppins']">Pengguna 2</span>
+                            <img src="images/pengguna.png" alt="User" class="w-16 h-16 rounded-full border-2 border-[#beaf75]"/>
+                            <div>
+                                <span class="text-gray-300 text-xl font-semibold font-['Montserrat']">Michael Chen</span>
+                                <p class="text-[#beaf75] text-sm">
+                                    <i class="fas fa-briefcase mr-1"></i>Marketing Director
+                                </p>
+                                <div class="flex text-[#beaf75] mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-[#767676] text-base font-normal font-['Poppins'] line-clamp-6">Saya sangat puas dengan layanan Braxie. Tim mereka sangat profesional dan hasil kerjanya melampaui ekspektasi kami.</p>
+                        <p class="text-gray-400 text-lg font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="fas fa-quote-left text-[#beaf75] mr-2 opacity-50"></i>
+                            ROI kami meningkat 150% sejak bekerjasama dengan Braxie. Strategi digital mereka sangat efektif dan terukur.
+                            <i class="fas fa-quote-right text-[#beaf75] ml-2 opacity-50"></i>
+                        </p>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="w-full aspect-square p-6 bg-white rounded-3xl border border-[#767676] hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <div class="w-full p-6 bg-gray-900/80 backdrop-blur-sm rounded-3xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="flex items-center gap-4 mb-6">
-                            <img src="images/pengguna.png" alt="User" class="w-[60px] h-[60px] rounded-full"/>
-                            <span class="text-[#767676] text-xl font-normal font-['Poppins']">Pengguna 3</span>
+                            <img src="images/pengguna.png" alt="User" class="w-16 h-16 rounded-full border-2 border-[#beaf75]"/>
+                            <div>
+                                <span class="text-gray-300 text-xl font-semibold font-['Montserrat']">Amanda Putri</span>
+                                <p class="text-[#beaf75] text-sm">
+                                    <i class="fas fa-store mr-1"></i>Small Business Owner
+                                </p>
+                                <div class="flex text-[#beaf75] mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-[#767676] text-base font-normal font-['Poppins'] line-clamp-6">Kerjasama dengan Braxie membuat bisnis kami berkembang pesat. Strategi digital mereka sangat efektif.</p>
+                        <p class="text-gray-400 text-lg font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="fas fa-quote-left text-[#beaf75] mr-2 opacity-50"></i>
+                            Dalam 6 bulan, penjualan online kami meningkat 300%. Braxie benar-benar memahami kebutuhan bisnis kecil.
+                            <i class="fas fa-quote-right text-[#beaf75] ml-2 opacity-50"></i>
+                        </p>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="w-full aspect-square p-6 bg-white rounded-3xl border border-[#767676] hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <div class="w-full p-6 bg-gray-900/80 backdrop-blur-sm rounded-3xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="flex items-center gap-4 mb-6">
-                            <img src="images/pengguna.png" alt="User" class="w-[60px] h-[60px] rounded-full"/>
-                            <span class="text-[#767676] text-xl font-normal font-['Poppins']">Pengguna 4</span>
+                            <img src="images/pengguna.png" alt="User" class="w-16 h-16 rounded-full border-2 border-[#beaf75]"/>
+                            <div>
+                                <span class="text-gray-300 text-xl font-semibold font-['Montserrat']">David Wilson</span>
+                                <p class="text-[#beaf75] text-sm">
+                                    <i class="fas fa-shopping-cart mr-1"></i>E-commerce Manager
+                                </p>
+                                <div class="flex text-[#beaf75] mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-[#767676] text-base font-normal font-['Poppins'] line-clamp-6">Tim Braxie sangat responsif dan selalu memberikan solusi kreatif untuk setiap tantangan yang kami hadapi.</p>
+                        <p class="text-gray-400 text-lg font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="fas fa-quote-left text-[#beaf75] mr-2 opacity-50"></i>
+                            Konversi website kami meningkat 250% berkat optimasi yang dilakukan Braxie. Sangat merekomendasikan!
+                            <i class="fas fa-quote-right text-[#beaf75] ml-2 opacity-50"></i>
+                        </p>
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="w-full aspect-square p-6 bg-white rounded-3xl border border-[#767676] hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <div class="w-full p-6 bg-gray-900/80 backdrop-blur-sm rounded-3xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="flex items-center gap-4 mb-6">
-                            <img src="images/pengguna.png" alt="User" class="w-[60px] h-[60px] rounded-full"/>
-                            <span class="text-[#767676] text-xl font-normal font-['Poppins']">Pengguna 5</span>
+                            <img src="images/pengguna.png" alt="User" class="w-16 h-16 rounded-full border-2 border-[#beaf75]"/>
+                            <div>
+                                <span class="text-gray-300 text-xl font-semibold font-['Montserrat']">Lisa Rahman</span>
+                                <p class="text-[#beaf75] text-sm">
+                                    <i class="fas fa-paint-brush mr-1"></i>Creative Director
+                                </p>
+                                <div class="flex text-[#beaf75] mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-[#767676] text-base font-normal font-['Poppins'] line-clamp-6">Desain yang mereka buat sangat modern dan sesuai dengan target market kami. Sangat merekomendasikan Braxie!</p>
+                        <p class="text-gray-400 text-lg font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="fas fa-quote-left text-[#beaf75] mr-2 opacity-50"></i>
+                            Desain dan branding yang dibuat Braxie membuat brand kami stand out di pasar yang kompetitif.
+                            <i class="fas fa-quote-right text-[#beaf75] ml-2 opacity-50"></i>
+                        </p>
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="w-full aspect-square p-6 bg-white rounded-3xl border border-[#767676] hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <div class="w-full p-6 bg-gray-900/80 backdrop-blur-sm rounded-3xl border-2 border-[#beaf75]/20 hover:border-[#beaf75] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="flex items-center gap-4 mb-6">
-                            <img src="images/pengguna.png" alt="User" class="w-[60px] h-[60px] rounded-full"/>
-                            <span class="text-[#767676] text-xl font-normal font-['Poppins']">Pengguna 6</span>
+                            <img src="images/pengguna.png" alt="User" class="w-16 h-16 rounded-full border-2 border-[#beaf75]"/>
+                            <div>
+                                <span class="text-gray-300 text-xl font-semibold font-['Montserrat']">Rudi Santoso</span>
+                                <p class="text-[#beaf75] text-sm">
+                                    <i class="fas fa-rocket mr-1"></i>Startup Founder
+                                </p>
+                                <div class="flex text-[#beaf75] mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-[#767676] text-base font-normal font-['Poppins'] line-clamp-6">Braxie membantu kami mentransformasi presence digital kami. Hasil kerjanya luar biasa!</p>
+                        <p class="text-gray-400 text-lg font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="fas fa-quote-left text-[#beaf75] mr-2 opacity-50"></i>
+                            Pertumbuhan user base kami meningkat 400% dalam setahun berkat strategi digital Braxie.
+                            <i class="fas fa-quote-right text-[#beaf75] ml-2 opacity-50"></i>
+                        </p>
                     </div>
                 </div>
             </div>
-                    <footer class="bg-[#beaf75] text-white py-16">
-                        <div class="container mx-auto px-4">
-                            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                                <!-- Kolom 1 - About -->
-                                <div class="hover:transform hover:scale-105 transition-all duration-300">
-                                    <h3 class="text-xl font-bold mb-4 hover:text-gray-200 transition-colors duration-300">Tentang Kami</h3>
-                                    <p class="text-sm hover:text-gray-200 transition-colors duration-300">Braxie adalah agensi digital kreatif yang fokus pada pengembangan solusi digital inovatif untuk membantu bisnis Anda berkembang.</p>
-                                </div>
-                                <!-- Kolom 4 - Social Media -->
-                                <div class="md:col-start-4">
-                                    <h3 class="text-xl font-bold mb-4 hover:text-gray-200 transition-colors duration-300">Follow Us</h3>
-                                    <ul class="space-y-2">
-                                        <li>
-                                            <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" class="w-5 h-5">
-                                                Facebook
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                                <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" class="w-5 h-5">
-                                                Twitter
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="w-5 h-5">
-                                                Instagram
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="border-t border-white mt-8 pt-8 text-center">
-                                <p class="hover:text-gray-200 transition-colors duration-300">&copy; 2025 Braxie. Hak Cipta Dilindungi.</p>
-                            </div>
+
+            <footer class="bg-gradient-to-b from-gray-900 to-black text-gray-400 py-16 rounded-3xl shadow-xl">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                        <!-- Kolom 1 - About -->
+                        <div class="transform hover:scale-105 transition-all duration-300">
+                            <h3 class="text-xl font-bold mb-6 font-['Montserrat'] hover:text-[#beaf75] transition-colors duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>Tentang Kami
+                            </h3>
+                            <p class="text-base font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">
+                                Braxie adalah agensi digital kreatif yang fokus pada pengembangan solusi digital inovatif untuk membantu bisnis Anda berkembang.
+                            </p>
                         </div>
-                    </footer>
+                        <!-- Kolom 4 - Social Media -->
+                        <div class="md:col-start-4">
+                            <h3 class="text-xl font-bold mb-6 font-['Montserrat'] hover:text-[#beaf75] transition-colors duration-300">
+                                <i class="fas fa-share-alt mr-2"></i>Follow Us
+                            </h3>
+                            <ul class="space-y-4 font-['Open Sans']">
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 group">
+                                        <i class="fab fa-facebook text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                        <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 group">
+                                        <i class="fab fa-twitter text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                        <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 group">
+                                        <i class="fab fa-instagram text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                        <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Instagram</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                        <p class="font-['Open Sans'] hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="far fa-copyright mr-2"></i>2025 Braxie. Hak Cipta Dilindungi.
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </footer>
+        </div>
+    </div>
 </html>
