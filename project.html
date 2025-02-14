@@ -5,86 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="website icon" type="png" href="images/logo_B (1).png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Project</title>
+    <style>
+        @media (min-width: 1024px) {
+            body {
+                background: linear-gradient(to top, #2d2d2d, #4a4a4a);
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="w-full min-h-screen relative bg-white overflow-hidden">
-        <div class="w-full h-full absolute bg-gradient-to-tr from-white to-[#bdae74] transition-all duration-500"></div>
-        <div class="px-4 md:px-8 lg:px-32 pt-16 relative">
-            <div class="text-black text-2xl font-bold font-['Poppins'] mb-8 hover:text-[#beaf75] transition-colors duration-300 cursor-pointer">Braxie</div>
-            <div class="text-center text-white text-2xl md:text-[40px] font-bold font-['Poppins'] mb-12 hover:text-[#e6dbb7] transition-colors duration-300">This is Some Of Our Projects</div>
+    <div data-layer="Landing Page" class="w-full min-h-screen relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 overflow-x-hidden">
+        <div data-layer="Background Gradient" class="w-full h-full absolute bg-gradient-to-tr from-gray-900 to-gray-800 opacity-60 transition-all duration-500"></div>
+        
+        <div class="w-full relative px-4 py-8 md:px-8 lg:px-16">
+            <!-- Header -->
+            <nav class="flex justify-between items-center mb-16">
+                <h1 class="text-gray-300 text-2xl md:text-3xl font-bold font-['Montserrat'] hover:text-[#beaf75] transform hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-crown text-[#beaf75] mr-2"></i>Braxie
+                </h1>
+            </nav>
+
+            <div class="text-center mb-12">
+                <h2 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat'] transform hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-project-diagram mr-2"></i>Our Projects
+                </h2>
+                <h1 class="text-gray-300 text-4xl md:text-5xl font-bold font-['Montserrat'] leading-tight transform hover:scale-105 transition-all duration-300 mt-4">
+                    <i class="fas fa-star mr-2"></i>This is Some Of Our Projects
+                </h1>
+                <!-- Added Subtitle -->
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Kami bangga mempersembahkan portofolio proyek-proyek terbaik kami yang telah membantu klien mencapai kesuksesan dalam dunia digital.</p>
+            </div>
+
+            <!-- Added Stats Section -->
+            <div class="grid grid-cols-4 gap-4 mb-16 text-center">
+                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg">
+                    <div class="text-3xl font-bold text-[#beaf75]">150+</div>
+                    <div class="text-gray-400">Proyek Selesai</div>
+                </div>
+                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg">
+                    <div class="text-3xl font-bold text-[#beaf75]">98%</div>
+                    <div class="text-gray-400">Klien Puas</div>
+                </div>
+                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg">
+                    <div class="text-3xl font-bold text-[#beaf75]">10+</div>
+                    <div class="text-gray-400">Tahun Pengalaman</div>
+                </div>
+                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg">
+                    <div class="text-3xl font-bold text-[#beaf75]">24/7</div>
+                    <div class="text-gray-400">Dukungan</div>
+                </div>
+            </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                 <!-- Project Card 1 -->
-                <div class="bg-white rounded-[48px] border border-[#beaf75] p-8 hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
-                    <h3 class="text-[#4d4b4b] text-3xl md:text-[40px] font-bold font-['Poppins'] mb-6 hover:text-[#beaf75] transition-colors duration-300">Visionary Agency</h3>
-                    <p class="text-[#aea47d] text-xl hover:text-[#8c835f] transition-colors duration-300">Membantu bisnis membangun identitas visual yang kuat dengan desain logo, warna, dan elemen branding yang unik.</p>
+                <div class="space-y-8 bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl transform hover:scale-105 transition-all duration-300 border-2 border-[#beaf75]/20 hover:border-[#beaf75] shadow-lg hover:shadow-xl">
+                    <h3 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat']">
+                        <i class="fas fa-eye mr-2"></i>Visionary Agency
+                    </h3>
+                    <p class="text-gray-400 text-xl font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-all duration-300">
+                        <i class="fas fa-check-circle text-[#beaf75] mr-2"></i>Membantu bisnis membangun identitas visual yang kuat dengan desain logo, warna, dan elemen branding yang unik.
+                    </p>
+                    <!-- Added Project Details -->
+                    <div class="pt-4 border-t border-[#beaf75]/20">
+                        <div class="flex justify-between text-sm text-gray-400">
+                            <span><i class="fas fa-calendar-alt mr-2"></i>Durasi: 2-4 minggu</span>
+                            <span><i class="fas fa-tag mr-2"></i>Mulai dari 5jt</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Project Card 2 -->
-                <div class="bg-white rounded-[48px] border border-[#beaf75] p-8 hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
-                    <h3 class="text-[#4d4b4b] text-3xl md:text-[40px] font-bold font-['Poppins'] mb-6 hover:text-[#beaf75] transition-colors duration-300">NextGen Apps</h3>
-                    <p class="text-[#aea47d] text-xl hover:text-[#8c835f] transition-colors duration-300">Mobile App Development. Aplikasi mobile yang dirancang untuk memberikan pengalaman pengguna yang intuitif dan responsif, memastikan bisnis tetap terhubung dengan pelanggan.</p>
+                <div class="space-y-8 bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl transform hover:scale-105 transition-all duration-300 border-2 border-[#beaf75]/20 hover:border-[#beaf75] shadow-lg hover:shadow-xl">
+                    <h3 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat']">
+                        <i class="fas fa-mobile-alt mr-2"></i>NextGen Apps
+                    </h3>
+                    <p class="text-gray-400 text-xl font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-all duration-300">
+                        <i class="fas fa-check-circle text-[#beaf75] mr-2"></i>Mobile App Development. Aplikasi mobile yang dirancang untuk memberikan pengalaman pengguna yang intuitif dan responsif, memastikan bisnis tetap terhubung dengan pelanggan.
+                    </p>
+                    <!-- Added Project Details -->
+                    <div class="pt-4 border-t border-[#beaf75]/20">
+                        <div class="flex justify-between text-sm text-gray-400">
+                            <span><i class="fas fa-calendar-alt mr-2"></i>Durasi: 1-3 bulan</span>
+                            <span><i class="fas fa-tag mr-2"></i>Mulai dari 20jt</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Project Card 3 -->
-                <div class="bg-white rounded-[48px] border border-[#beaf75] p-8 hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
-                    <h3 class="text-[#4d4b4b] text-3xl md:text-[40px] font-bold font-['Poppins'] mb-6 hover:text-[#beaf75] transition-colors duration-300">Web Master Pro</h3>
-                    <p class="text-[#aea47d] text-xl hover:text-[#8c835f] transition-colors duration-300">Website Development & Optimization. Membangun website profesional dengan performa optimal dan desain yang menarik, meningkatkan engagement dan konversi.</p>
+                <div class="space-y-8 bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl transform hover:scale-105 transition-all duration-300 border-2 border-[#beaf75]/20 hover:border-[#beaf75] shadow-lg hover:shadow-xl">
+                    <h3 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat']">
+                        <i class="fas fa-globe mr-2"></i>Web Master Pro
+                    </h3>
+                    <p class="text-gray-400 text-xl font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-all duration-300">
+                        <i class="fas fa-check-circle text-[#beaf75] mr-2"></i>Website Development & Optimization. Membangun website profesional dengan performa optimal dan desain yang menarik, meningkatkan engagement dan konversi.
+                    </p>
+                    <!-- Added Project Details -->
+                    <div class="pt-4 border-t border-[#beaf75]/20">
+                        <div class="flex justify-between text-sm text-gray-400">
+                            <span><i class="fas fa-calendar-alt mr-2"></i>Durasi: 2-6 minggu</span>
+                            <span><i class="fas fa-tag mr-2"></i>Mulai dari 10jt</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Project Card 4 -->
-                <div class="bg-white rounded-[48px] border border-[#beaf75] p-8 hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
-                    <h3 class="text-[#4d4b4b] text-3xl md:text-[40px] font-bold font-['Poppins'] mb-6 hover:text-[#beaf75] transition-colors duration-300">Ad Boost Digital</h3>
-                    <p class="text-[#aea47d] text-xl hover:text-[#8c835f] transition-colors duration-300">Social Media & Digital Marketing Strategi pemasaran digital yang terarah untuk meningkatkan brand awareness dan interaksi dengan audiens secara efektif.</p>
+                <div class="space-y-8 bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl transform hover:scale-105 transition-all duration-300 border-2 border-[#beaf75]/20 hover:border-[#beaf75] shadow-lg hover:shadow-xl">
+                    <h3 class="text-[#beaf75] text-2xl md:text-3xl font-bold font-['Montserrat']">
+                        <i class="fas fa-bullhorn mr-2"></i>Ad Boost Digital
+                    </h3>
+                    <p class="text-gray-400 text-xl font-normal font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-all duration-300">
+                        <i class="fas fa-check-circle text-[#beaf75] mr-2"></i>Social Media & Digital Marketing Strategi pemasaran digital yang terarah untuk meningkatkan brand awareness dan interaksi dengan audiens secara efektif.
+                    </p>
+                    <!-- Added Project Details -->
+                    <div class="pt-4 border-t border-[#beaf75]/20">
+                        <div class="flex justify-between text-sm text-gray-400">
+                            <span><i class="fas fa-calendar-alt mr-2"></i>Durasi: Berkelanjutan</span>
+                            <span><i class="fas fa-tag mr-2"></i>Mulai dari 3jt/bulan</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="flex justify-center mb-16">
-                <a href="index.html" class="inline-block transform hover:scale-105 transition-all duration-300">
-                    <div class="px-8 py-4 bg-white hover:bg-[#beaf75] rounded-full border border-[#beaf75] group transition-all duration-300 shadow-md hover:shadow-lg">
-                        <span class="text-[#beaf75] group-hover:text-white text-xl font-bold font-['Poppins'] transition-all duration-300">Home</span>
-                    </div>
-                </a>
+            <!-- Added CTA Section -->
+            <div class="text-center mb-16 bg-gray-900/80 p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-[#beaf75] mb-4">Siap Memulai Proyek?</h3>
+                <p class="text-gray-400 mb-6">Hubungi kami untuk konsultasi gratis dan diskusi tentang proyek Anda</p>
+                <div class="flex justify-center gap-4">
+                    <a href="contact.html" class="px-8 py-4 bg-[#beaf75] hover:bg-[#a39666] text-gray-900 rounded-full text-xl font-bold font-['Montserrat'] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
+                        <i class="fas fa-envelope mr-2"></i>Hubungi Kami
+                    </a>
+                    <a href="index.html" class="px-8 py-4 bg-[#beaf75] hover:bg-[#a39666] text-gray-900 rounded-full text-xl font-bold font-['Montserrat'] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </a>
+                </div>
             </div>
 
             <!-- Footer -->
-            <footer class="bg-[#beaf75] text-white py-16 transition-colors duration-300">
-                <div class="container mx-auto px-4">
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <footer class="bg-gradient-to-b from-gray-900 to-black text-gray-400 py-16 rounded-3xl shadow-xl">
+                <div class="container mx-auto px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                         <!-- Kolom 1 - About -->
-                        <div class="hover:transform hover:scale-105 transition-all duration-300">
-                            <h3 class="text-xl font-bold mb-4 hover:text-gray-200 transition-colors duration-300">Tentang Kami</h3>
-                            <p class="text-sm hover:text-gray-200 transition-colors duration-300">Braxie adalah agensi digital kreatif yang fokus pada pengembangan solusi digital inovatif untuk membantu bisnis Anda berkembang.</p>
+                        <div class="transform hover:scale-105 transition-all duration-300">
+                            <h3 class="text-xl font-bold mb-6 font-['Montserrat'] hover:text-[#beaf75] transition-colors duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>Tentang Kami
+                            </h3>
+                            <p class="text-base font-['Open Sans'] leading-relaxed hover:text-[#beaf75] transition-colors duration-300">Braxie adalah agensi digital kreatif yang fokus pada pengembangan solusi digital inovatif untuk membantu bisnis Anda berkembang.</p>
                         </div>
                         <!-- Kolom 4 - Social Media -->
                         <div class="md:col-start-4">
-                            <h3 class="text-xl font-bold mb-4 hover:text-gray-200 transition-colors duration-300">Follow Us</h3>
-                            <ul class="space-y-2">
+                            <h3 class="text-xl font-bold mb-6 font-['Montserrat'] hover:text-[#beaf75] transition-colors duration-300">
+                                <i class="fas fa-share-alt mr-2"></i>Follow Us
+                            </h3>
+                            <ul class="space-y-4 font-['Open Sans']">
                                 <li>
-                                    <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" class="w-5 h-5 hover:opacity-80 transition-opacity duration-300">
-                                        Facebook
+                                    <a href="#" class="flex items-center gap-3 group">
+                                        <i class="fab fa-facebook text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                        <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Facebook</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" class="w-5 h-5 hover:opacity-80 transition-opacity duration-300">
-                                        Twitter
+                                    <a href="#" class="flex items-center gap-3 group">
+                                        <i class="fab fa-twitter text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                        <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Twitter</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-gray-300 flex items-center gap-2 transform hover:translate-x-2 transition-all duration-300">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="w-5 h-5 hover:opacity-80 transition-opacity duration-300">
-                                        Instagram
+                                    <a href="#" class="flex items-center gap-3 group">
+                                        <i class="fab fa-instagram text-2xl text-[#beaf75] group-hover:scale-110 transition-transform duration-300"></i>
+                                        <span class="group-hover:text-[#beaf75] group-hover:translate-x-2 transition-all duration-300">Instagram</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
             
-                    <div class="border-t border-white mt-8 pt-8 text-center">
-                        <p class="hover:text-gray-200 transition-colors duration-300">&copy; 2025 Braxie. Hak Cipta Dilindungi.</p>
+                    <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                        <p class="font-['Open Sans'] hover:text-[#beaf75] transition-colors duration-300">
+                            <i class="far fa-copyright mr-2"></i>2025 Braxie. Hak Cipta Dilindungi.
+                        </p>
                     </div>
                 </div>
             </footer>
